@@ -32,11 +32,45 @@ $(document).ready(function(){
   $('#firstInput').keyup(function(e){
    setInterval(function(){
     $('#text-typing').text("");
-   },1000)
+   },2000)
    
+   //*********++++++++++*/
+   /*
+$('#change').change(function(e){
+    var selected=$('#change :selected').text();
+    var text=e.type;
+
+    $('#secondInput').val(selected);
+})
    
+})
+*/
+
+//*********++++++++++*/
+/*
+$('#firstInput').select(function(e){
+    
+    var text=e.type;
+
+    $('#secondInput').val(text);
+})
+
+    
+ })
+*/
+ //*********++++++++++*/
+$('#form').submit(function(e){
+ 
+var text= $('#firstInput').val();
+   if(text==="Eli"){
+       return;
+   }
+   else{
+    e.preventDefault();
+   }
 })
 
     
  })
  
+})
